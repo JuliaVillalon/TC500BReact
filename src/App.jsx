@@ -23,9 +23,9 @@ function App() {
         <button onClick={() => setCount((c) => (c = c + 1))}>
           count is {count}
         </button>
-        <Boton texto = {"suma"}/>
-        <Boton texto = {"resta"}/>
-        <Boton texto = {"mensaje"} onclick/>
+        <Boton texto = {"suma"} onclick = {() => setCount((c) => (c = c + 1))} />
+        <Boton texto = {"resta"} onclick = {() => setCount((c) => (c = c - 1))} />
+        <Boton texto = {"mensaje"} onclick = {msg} />
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
